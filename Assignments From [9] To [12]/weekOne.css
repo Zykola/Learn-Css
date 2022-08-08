@@ -1,0 +1,39 @@
+/* ######### CallengeOne ######### */
+div {
+  display: inline-block;
+  background-color: #d4d4d4;
+  padding: 15px;
+  margin: 15px;
+  outline: 5px solid #000;
+}
+.sh1 {
+  border: 5px solid #f00;
+}
+.sh2 {
+  border: 5px solid;
+  border-color: #00f #0f0;
+}
+.sh3 {
+  border: 5px dashed;
+  border-color: #0288d1 #009688 #e91e63 #ffee00;
+}
+/* ######### CallengeOne ######### */
+
+/* ######### CallengeTwo ######### */
+div {
+  width: 400px;
+  padding: 15px;
+  margin: 20px auto;
+  background-color: #d4d4d4;
+  outline: 10px solid #d4d4d4;
+}
+.note1 {
+  border-left: 6px solid #e91e63;
+}
+.note2 {
+  visibility: hidden;
+}
+.note3 {
+  border-left: 6px solid #009688;
+}
+/* ######### CallengeTwo ######### */

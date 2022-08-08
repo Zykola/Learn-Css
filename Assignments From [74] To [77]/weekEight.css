@@ -1,0 +1,183 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ########## Callenge ########## */
+
+/* body{
+  background-color:#333;
+} */
+
+.load {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+.load div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: orchid;
+  animation-name: up-and-down;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.load .two {
+  animation-delay: 0.3s;
+}
+.load .three {
+  animation-delay: 0.6s;
+}
+
+@keyframes up-and-down {
+  to {
+    opacity: 0.2;
+    transform: translateY(-20px);
+  }
+}
+
+/* ########## Callenge ########## */
+
+/* ########## CallengeOne ########## */
+.assgin1 {
+  width: 50px;
+  height: 50px;
+  margin: 50px auto;
+  border: 5px solid #ea245c;
+  border-left-color: transparent;
+  border-radius: 50%;
+  position: relative;
+  animation-name: change-shape;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.assgin1:hover {
+  animation-play-state: paused;
+}
+.assgin1::before {
+  content: "";
+  width: calc(100% + 15px);
+  height: calc(100% + 15px);
+  border: 5px solid #219ff8;
+  border-top-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.assgin1::after {
+  content: "";
+  width: calc(100% + 30px);
+  height: calc(100% + 30px);
+  border: 5px solid #fca200;
+  border-right-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes change-shape {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+/* ########## CallengeOne ########## */
+
+/* ########## CallengeTwo ########## */
+.assgin2 {
+  width: 50px;
+  height: 50px;
+  margin: 50px auto;
+  border: 5px solid #2490ff;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  position: relative;
+  animation-name: change-shape2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+.assgin2::before {
+  content: "";
+  width: calc(100% + 15px);
+  height: calc(100% + 15px);
+  border: 5px solid #fca200;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  position: absolute;
+  top: -13px;
+  left: -13px;
+  animation-name: change-shape2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+.assgin2::after {
+  content: "";
+  width: calc(100% + 30px);
+  height: calc(100% + 30px);
+  border: 5px solid black;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  animation-name: change-shape2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+.assgin2:hover,
+.assgin2:hover::before,
+.assgin2:hover::after {
+  animation-play-state: running;
+}
+@keyframes change-shape2 {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* ########## CallengeTwo ########## */
+
+/* ########## CallengeThree ########## */
+span {
+  width: 50px;
+  height: 50px;
+  margin: 10px auto;
+  display: block;
+  border: 5px solid black;
+  border-left-color: transparent;
+  border-radius: 50%;
+  animation-name: change-shape3;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+}
+@keyframes change-shape3 {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+/* ########## CallengeThree ########## */

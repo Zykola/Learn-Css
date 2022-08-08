@@ -1,0 +1,201 @@
+:root {
+  --background-color: #ccc;
+  --margin: 10px;
+  --padding: 10px;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+/* ######### ChallengeOne ######### */
+.assgin1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: -5px 0 0 #03a9f4, 5px 0 0 #ff5722;
+  font-size: 20px;
+  margin: 10px auto;
+  background-color: #eee;
+  color: #ff5722;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ######### ChallengeOne ######### */
+
+/* ######### ChallengeTwo ######### */
+.parent1 {
+  width: 600px;
+  height: 300px;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #eee;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.parent1 div {
+  background-color: #ff5722;
+  color: white;
+  width: calc(95% / 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+/* ######### ChallengeTwo ######### */
+
+/* ######### ChallengeThree ######### */
+.parent2 {
+  display: flex;
+  width: 600px;
+  height: 300px;
+  background-color: #eee;
+  margin: 10px auto;
+  flex-flow: wrap row;
+  justify-content: space-between;
+}
+.parent2 div {
+  background-color: #607d8b;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 50%;
+  width: calc(95% / 3);
+  display: flex;
+}
+.parent2 .one {
+  order: 6;
+  height: 30px;
+  align-self: flex-end;
+}
+.parent2 .two {
+  order: 5;
+}
+.parent2 .three {
+  order: 2;
+  height: 30px;
+}
+.parent2 .four {
+  order: 3;
+}
+.parent2 .five {
+  order: 4;
+}
+
+.parent2 .six {
+  order: 1;
+}
+/* ######### ChallengeThree ######### */
+
+/* ######### ChallengeFour ######### */
+.parent3 {
+  width: 600px;
+  height: 300px;
+  background-color: #eee;
+  color: white;
+  margin: 10px auto;
+  padding: 10px;
+  display: flex;
+  flex-flow: column;
+}
+.parent3 div {
+  background-color: #009688;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(95% / 3);
+  width: 5%;
+  align-self: flex-end;
+}
+.parent3 .two {
+  align-self: flex-start;
+  width: 50%;
+}
+/* ######### ChallengeFour ######### */
+/* ######### ChallengeFive ######### */
+.parent4 {
+  width: 600px;
+  height: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+}
+.parent4 div {
+  width: calc(80% / 4);
+  height: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parent4 .one {
+  order: 2;
+  background-color: #ff9800;
+}
+.parent4 .two {
+  order: 3;
+  background-color: #8bc34a;
+  align-self: flex-end;
+}
+.parent4 .three {
+  order: 4;
+  background-color: #795548;
+}
+.parent4 .four {
+  order: 1;
+  background-color: #673ab7;
+  align-self: flex-end;
+}
+/* ######### ChallengeFive ######### */
+
+/* ######### ChallengeSix ######### */
+.page {
+  background-color: #eee;
+  overflow: hidden;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo,
+.links {
+  background-color: var(--background-color);
+  padding: var(--padding);
+  margin: var(--margin);
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: calc(100% / 5);
+}
+.links {
+  justify-content: flex-end;
+  list-style-type: none;
+}
+.links li {
+  margin-left: 20px;
+}
+.main-area {
+  justify-content: space-between;
+  display: flex;
+}
+.main-area div {
+  background-color: var(--background-color);
+  padding: var(--padding);
+  margin: var(--margin);
+  width: calc(100% / 6);
+  height: 400px;
+}
+.footer {
+  background-color: var(--background-color);
+  padding: var(--padding);
+  margin: var(--margin);
+  display: flex;
+  justify-content: space-between;
+}
+/* ######### ChallengeSix ######### */

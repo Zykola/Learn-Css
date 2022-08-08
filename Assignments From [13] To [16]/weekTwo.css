@@ -1,0 +1,25 @@
+/* ######### CallengeOne ######### */
+.parent .child .title {
+  color: red;
+}
+.parent  .title{
+color: blue;
+} 
+.parent p , .title{
+color: green;
+} 
+/* ######### CallengeOne ######### */
+
+/* ######### CallengeTwo ######### */
+.parent2 div{
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  background: red;
+  width: fit-content;
+  max-width: 400px;
+  max-height: 100px;
+  overflow: hidden;
+  
+}
+/* ######### CallengeTwo ######### */

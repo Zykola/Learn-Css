@@ -1,0 +1,154 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --color: white;
+  --background-color: #ff5722;
+}
+
+/* ########### CallengeOne ########### */
+.assgin1 {
+  color: var(--color);
+  background-color: var(--background-color);
+  width: 150px;
+  margin: 10px auto;
+  text-align: center;
+  position: relative;
+}
+.assgin1::before,
+.assgin1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.assgin1::before {
+  transform: skew(10deg, 10deg);
+}
+.assgin1::after {
+  transform: skew(-10deg, -10deg);
+}
+/* ########### CallengeOne ########### */
+
+/* ########### CallengeTwo ########### */
+.assgin2 {
+  color: var(--color);
+  background-color: var(--background-color2);
+  width: 150px;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+.assgin2::before {
+  content: "";
+  background-color: var(--background-color2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -15px;
+  z-index: -1;
+}
+.assgin2::after {
+  content: "";
+  background-color: var(--background-color2);
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -45px;
+  z-index: -1;
+  transform: skew(20deg);
+}
+.assgin2::before {
+  transform: skew(20deg);
+}
+/* ########### CallengeTwo ########### */
+
+/* ########### CallengeThree ########### */
+/* .class {
+  matrix(3, 0.2679, 0, 3, 20, 100);
+} */
+/*
+ transform: scale-y(3) skew-x(0.2679) skew-y(0) scale-x(3) translate-x(20) translate-y(100)
+ */
+/* ########### CallengeThree ########### */
+
+/* ########### CallengeFour ########### */
+
+.assgin3 {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-bottom: 5px solid black;
+  margin: 100px auto;
+  padding: 10px;
+  background-color: #607d8b;
+  display: flex;
+  align-items: flex-end;
+}
+.assgin3::after {
+  content: "Elzero";
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.assgin3::before {
+  content: "";
+  position: absolute;
+  width: 69%;
+  height: 69%;
+  background-color: black;
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
+  transform: rotate(44.5deg);
+  top: -69px;
+  left: 29px;
+}
+/* ########### CallengeFour ########### */
+
+/* ########### CallengeFive ########### */
+.container {
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+  perspective: 600px;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  backface-visibility: hidden;
+}
+.card .front {
+  background-color: #ea2264;
+}
+.card .back {
+  background-color: #1692fc;
+  transform: rotateY(180deg);
+}
+/* ########### CallengeFive ########### */

@@ -1,0 +1,54 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+hr{
+  margin: 20px auto;
+}
+/* ########## CallengeOne ########## */
+.assign-1 div.main.red{
+  color: red;
+}
+/* ########## CallengeOne ########## */
+
+/* ########## CallengeTwo ########## */
+.assign-2 .parent > div:nth-child(2){
+  color: red;
+}
+/* ########## CallengeTwo ########## */
+
+/* ########## CallengeThree ########## */
+.assign-3 .parent > div:only-child{
+  color: red;
+}
+/* ########## CallengeThree ########## */
+
+/* ########## CallengeFour ########## */
+.assign-4  > div[title]:not(.no-need){
+  color: red;
+}
+/* ########## CallengeFour ########## */
+
+/* ########## CallengeFive ########## */
+.assign-5  > div:nth-child(2) div{
+  color: red;
+}
+/* ########## CallengeFive ########## */
+
+/* ########## CallengeSex ########## */
+.assign-6 div:not(.no-need) div:nth-last-of-type(2){
+  color: red;
+}
+/* ########## CallengeSex ########## */
+
+/* ########## CallengeSeven ########## */
+.assign-7 div:first-child div:nth-child(5){
+  color: red;
+}
+/* ########## CallengeSeven ########## */
+
+/* ########## CallengeEight ########## */
+.assign-8 :not(div:first-child ,h3 , div:last-child){
+  color: red;
+}
+/* ########## CallengeEight ########## */

@@ -1,0 +1,75 @@
+/* ######### CallengeOne ######### */
+/* title {Any Element With class=title } */
+/* nav {  Any ELement with id=nav  } */
+/* div { All Divs } */
+/* h2 { All H2s } */
+/* ######### CallengeOne ######### */
+
+/* ######### CallengeTwo ######### */
+/* IN HTML*/
+/* ######### CallengeTwo ######### */
+
+/* ######### CallengeThree ######### */
+/* IN HTML */
+/* ######### CallengeThree ######### */
+
+/* ######### CallengeFour ######### */
+/* IN HTML */
+/* ######### CallengeFour ######### */
+
+/* ######### CallengeFive ######### */
+/* Valid  */
+/* ._user-name {
+} */
+
+/* Valid  */
+/* .-user-name {
+} */
+
+/* Valid  */
+/* .-user-name {
+} */
+
+/* Not Valid  */
+/* .1user-name {
+} */
+
+/* Not Valid  */
+/* .@user-name {
+} */
+
+/* Not Valid  */
+/* .user@name {
+} */
+
+/* Not Valid  */
+/* ._user10name {
+} */
+
+/* Not Valid  */
+/* .u {
+} */
+/* ######### CallengeFive ######### */
+
+/* ######### CallengeSix ######### */
+
+/* Bad  */
+/* .USERNAME {
+} */
+
+/* Bad  */
+/* .UserName {
+} */
+
+/* Good  */
+/* .user-name {
+} */
+
+/* Bad  */
+/* .userName {
+} */
+
+/* Bad  */
+/* .usernameprofile {
+} */
+/* ######### CallengeSix ######### */

@@ -1,0 +1,66 @@
+/* ######### ChallengeOne ######### */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.parent{
+  background-color: #EEE;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  transition-duration: .5s;
+  transition-delay: 0;
+  transition-timing-function: ease;
+}
+.parent:hover{
+  margin-top: 30px;
+}
+
+.child{
+    background-color: #CCC;
+    padding: 20px;
+    transition-duration: 1s;
+    transition-delay: .5s;
+    transition-timing-function: linear;
+    margin:10px ;
+}
+.parent:hover .child{
+    margin-top: 30px;
+}
+/* ######### ChallengeOne ######### */
+
+/* ######### ChallengeTwo ######### */
+.two{
+  width: 400px;
+  margin: 10px auto;
+  color: black !important;
+  background-color: #EEE !important;
+  font-size: 20px !important;
+  border: none !important;
+  position: relative;
+  text-indent: -2000px;
+}
+.two::after{
+  content: 'Elzero';
+  position: absolute;
+  text-indent: 0;
+  left: 190px;
+}
+/* ######### ChallengeTwo ######### */
+
+/* ######### ChallengeThree ######### */
+/* :root {
+  --mainColor: #009688;
+  --mainPadding: 10px;
+} */
+
+.three div{
+  margin: 10px auto;
+  padding: var(--mainPadding ,20px);
+  width: 400px;
+  border: 3px solid var(--mainColor ,black);
+  color: var(--mainColor,red);
+}
+
+/* ######### ChallengeThree ######### */

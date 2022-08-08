@@ -1,0 +1,47 @@
+/* ######### CallengeOne ######### */
+div {
+  color: black;
+  font-size: 80px;
+  text-shadow: 1px 1px 1px orange, 1px 1px 1px #0baef4, 1px 1px 1px purple;
+}
+/* ######### CallengeOne ######### */
+
+/* ######### CallengeTwo ######### */
+.one {
+  text-transform: uppercase;
+}
+.two {
+  text-transform: capitalize;
+}
+.three {
+  text-transform: lowercase;
+}
+/* ######### CallengeTwo ######### */
+
+/* ######### CallengeThree ######### */
+div {
+  background-color: #eee;
+  width: 400px;
+  padding: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* ######### CallengeThree ######### */
+
+/* ######### CallengeFour ######### */
+a{
+  background-color:#15b293;
+  display:block;
+  height:20px;
+  width:100px;
+  color: white;
+  font-size:23px;
+  padding:20px;
+  margin:20px;
+  text-decoration:none;
+  text-transform: capitalize;
+  text-align: center;
+  border-bottom: 12px solid #05765f;
+}
+/* ######### CallengeFour ######### */

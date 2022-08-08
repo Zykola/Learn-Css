@@ -1,0 +1,98 @@
+/* ######### CallengeOne ######### */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.one div {
+  width: 300px;
+  height: 60px;
+  margin: 10px auto;
+  font-weight: bold;
+  text-align: center;
+  line-height: 55px;
+}
+.frist {
+  background: #eee;
+}
+:empty {
+  background: red;
+}
+/* ######### CallengeOne ######### */
+
+/* ######### CallengeTwo ######### */
+.two {
+  position: relative;
+  margin: 10px auto;
+  background: #ccc;
+  font-size: 20px;
+  padding: 20px;
+  font-weight: bold;
+  width: 400px;
+  text-align: center;
+}
+.two::first-letter {
+  background: red;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  float: left;
+  margin-top: -9px;
+  margin-left: -35px;
+}
+/* ######### CallengeTwo ######### */
+
+/* ######### CallengeThree ######### */
+.three p {
+  background: #eee;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+  border-left: 5px solid #e91e63;
+  font-weight: bold;
+  position: relative;
+  margin: 10px auto;
+}
+.three p::before {
+  content: attr(data-person);
+  position: absolute;
+  top: 13px;
+  left: -100px;
+  background: #eee;
+  padding: 10px;
+  float: left;
+  width: 50px;
+}
+.three p::after{
+  content: '';
+  position: absolute;
+  border: 15px solid;
+  float: left;
+  border-color: transparent #e91e63 transparent transparent;
+  left: -35px;
+  top: 15px;
+}
+
+/* ######### CallengeThree ######### */
+
+/* ######### CallengeFour ######### */
+.four p {
+  background-color: #EEE;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  border-right: 5px solid #f44336;
+  counter-increment: members-countr;
+  width: 400px;
+  font-weight: bold;
+}
+.four p::before {
+  position: absolute;
+  background-color: #f44336;
+  color: white;
+  padding: 20px;
+  left: -45px;
+  top: 0;
+  float: left;
+  content: counter(members-countr);
+}
+/* ######### CallengeFour ######### */
